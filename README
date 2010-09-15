@@ -1,0 +1,16 @@
+#Simple browser Useragent parsing class
+
+This is a simple class to parse useragent string based on PHP code from http://techpatterns.com/downloads/php_browser_detection.php .
+Some ideas of Safari detection were taken from http://github.com/kuccello/Spy-Vs-Spy
+
+Class can't handle mobile browsers and can't parse OS info Right now, but I'm working on it.
+I'm a novice in Ruby development and I'm  learning Ruby with this project that's why code is far from ideal, but I hope someone could help me to do it more "Ruby"
+
+#usage
+
+require 'browsers.rb'
+info = Browsers.new('Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/525.13 (KHTML, like Gecko) Version/3.1 Safari/525.17')
+info.detect
+puts info.browsername
+puts info.browser_version
+
